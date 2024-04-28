@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.metronome {
+    text-align: center;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+#beatIndicator {
+    font-size: 48px;
+    animation: none;
+}
+
+@keyframes beat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}

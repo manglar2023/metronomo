@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Metrónomo Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="metronome">
+        <div class="controls">
+            <label for="bpm">BPM:</label>
+            <input type="number" id="bpm" value="120" min="40" max="208">
+            <label for="soundType">Tipo de Sonido:</label>
+            <select id="soundType">
+                <option value="sine">Sine</option>
+                <option value="square">Square</option>
+                <option value="triangle">Triangle</option>
+                <option value="sawtooth">Sawtooth</option>
+                <option value="click">Click Sound</option>
+            </select>
+			<label for="volumeControl">Volumen:</label>
+			<input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5">
+			<label for="subdivisions">Subdivisiones por beat:</label>
+			<select id="subdivisions">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select>
+            <button id="startStop">Iniciar</button>
+        </div>
+        <div id="beatIndicator" class="beat-indicator">💗</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
